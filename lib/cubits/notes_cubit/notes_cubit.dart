@@ -15,6 +15,6 @@ class NotesCubit extends Cubit<NotesState> {
     notes = notesBox.values.toList();
 
     // isLoading = false;
-   // emit(NotesSuccess(notes!));
+   emit(NotesSuccess());
   }
 }
