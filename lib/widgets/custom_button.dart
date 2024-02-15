@@ -12,7 +12,7 @@ class CustomButton extends StatelessWidget {
       ),
       width: MediaQuery.of(context).size.width,
       height: 55,
-      child: Center(
+      child: const Center(
         child: Text('Add', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,),),
       ),
     );
