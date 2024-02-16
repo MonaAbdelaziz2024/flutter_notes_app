@@ -1,16 +1,16 @@
 import 'package:hive/hive.dart';
-part 'note_model.g.dart';// run this in terminal => flutter packages pub run build_runner build
+part 'note_model.g.dart'; // run this in terminal => flutter packages pub run build_runner build
 
 @HiveType(typeId: 0) // unqie
 class NoteModel extends HiveObject {
   @HiveField(0)
-  final String title;
+  String title;
   @HiveField(1)
-  final String content;
+  String content;
   @HiveField(2)
-  final String date;
+  String date;
   @HiveField(3)
-  final int color;
+  int color;
 
   NoteModel({
     required this.title,
